@@ -9,9 +9,7 @@
 
 <img src="https://github.com/devansh2604/Marks-adding-project/assets/YOUR_IMAGE_ID/preview.png" width="700"/>
 
-> 🗂 GitHub repository view with code and CSV files.
 
----
 
 ## 📌 Features
 
