@@ -6,9 +6,7 @@
 ---
 
 ## 🖼️ Preview
-
-<img src="https://github.com/devansh2604/Marks-adding-project/assets/YOUR_IMAGE_ID/preview.png" width="700"/>
-
+https://github.com/devansh2604/Marks-adding-project/issues/1#issue-3143743927
 
 
 ## 📌 Features
