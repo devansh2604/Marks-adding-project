@@ -15,16 +15,12 @@
 
 ## 📁 Example Input: `marks.csv`
 
-Name,Marks
-Alice,50
-Bob,40
-Alice,30
-Bob,45
+Name,Marks  
+Alice,50  
+Bob,40  
+Alice,30  
+Bob,45  
 Charlie,60
-
-yaml
-Copy
-Edit
 
 ---
 
@@ -32,17 +28,13 @@ Edit
 
 {'Alice': 80, 'Bob': 85, 'Charlie': 60}
 
-yaml
-Copy
-Edit
-
 ---
 
 ## ▶️ How to Run
 
 1. ✅ Make sure you have Python installed (3.x version is fine)
 
-2. ✅ Save this file as `script.py`:
+2. ✅ Save this as `script.py`:
 
 ```python
 import csv
@@ -59,9 +51,9 @@ with open("marks.csv", "r") as f:
         totalmarks[name] = totalmarks.get(name, 0) + marks
 
 print(totalmarks)
-✅ Place your marks.csv in the same folder.
+✅ Put your marks.csv file in the same folder as script.py.
 
-✅ Run the script using:
+✅ Run the script:
 
 bash
 Copy
@@ -79,11 +71,11 @@ Reading CSV files in Python
 
 Using dictionaries to accumulate values
 
-File handling and looping over rows
+File handling and row iteration
 
 🙌 Author
 Devansh2604
-📌 GitHub Profile
+🔗 GitHub Profile
 
 ⭐ Show Some Love
 If you liked this project, give it a ⭐ star on GitHub!
@@ -94,12 +86,5 @@ Edit
 
 ---
 
-📌 **Now just copy this entire block**, paste it into your `README.md` file, and you're done!  
-No screenshots, no issues tab, no uploading images — clean and simple. Let me know if you want to add anything else later!
 
-
-
-
-
-
-
+Cha
