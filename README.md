@@ -1,57 +1,67 @@
-Marks-Adding-Project
-=====================
+# Mini-Project - Marks Adding
 
-This is a simple Python mini-project to calculate total marks for each student from a CSV file.
+This mini-project adds marks for students based on their roll numbers from a CSV file.
 
-How It Works:
--------------
+> 📂 Explore Mini Project – Marks Adding.pdf for the full assignment details.
 
-- Reads data from a CSV file named 'marks.csv'
-- Adds up marks if a student appears more than once
-- Prints the total marks using a Python dictionary
+---
 
-Sample CSV File (marks.csv):
-----------------------------
+## 📌 Problem Statement
 
-Name,Marks
-Alice,50
-Bob,40
-Alice,30
-Bob,45
-Charlie,60
+Given a list of student roll numbers and their corresponding marks (which may have multiple entries per student), calculate the *total marks* obtained by each unique roll number.
 
-Expected Output:
-----------------
+---
 
-{'Alice': 80, 'Bob': 85, 'Charlie': 60}
+## 📥 Input Format (CSV)
 
-Python Code:
-------------
+| Roll Num    | Marks |
+|-------------|-------|
+| 102003542   | 1     |
+| 102003640   | 1     |
+| 102003757   | 1     |
+| ...         | ...   |
 
-import csv
+> Input file: Mini Project - Marks Adding.csv
 
-totalmarks = {}
+---
 
-with open("marks.csv", "r") as f:
-    reader = csv.reader(f)
-    next(reader)  # skip header
-    for row in reader:
-        name = row[0]
-        marks = int(row[1])
-        totalmarks[name] = totalmarks.get(name, 0) + marks
+## ✅ Expected Output
 
-print(totalmarks)
+| Roll Num    | Marks |
+|-------------|-------|
+| 102003542   | 1     |
+| 102003640   | 3     |
+| 102003757   | 2     |
+| ...         | ...   |
 
-How to Run:
------------
+---
 
-1. Save the sample CSV as marks.csv in the same folder.
-2. Save the Python code in a file named script.py.
-3. Open terminal or command prompt.
-4. Run the file using: python script.py
+## 🧠 Logic Used
 
-Author:
--------
+1. Read CSV using csv.reader()
+2. Use a Python dictionary to store totals per roll number
+3. Add marks if roll number is repeated
+4. Print or export final results
 
-Devansh2604
-GitHub: https://github.com/devansh2604
+---
+
+## 🐍 Python Modules Used
+
+- csv for file reading and parsing
+- dict for aggregating marks
+
+---
+
+> Here's a visual representation of how input is processed into output:
+![image](https://github.com/user-attachments/assets/d893755f-655d-46d8-b104-a012aea79a5f)
+
+---
+
+## 🚀 How to Run
+
+1. Clone/download this repository
+2. Make sure Mini Project - Marks Adding.csv is in the same folder
+3. Run the Python script:
+
+```bash
+python marks_adder.py
