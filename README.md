@@ -31,7 +31,7 @@ Charlie,60
 
 ## 💻 Python Code
 
-
+'''python 
 import csv
 
 totalmarks = {}
