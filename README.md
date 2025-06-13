@@ -7,13 +7,13 @@
 ## ✅ Features
 
 - Reads student marks from a CSV file (`marks.csv`)
-- Automatically adds up marks if a student appears more than once
-- Works with just built-in Python — no extra libraries needed
-- Output is printed as a Python dictionary
+- Automatically adds marks if a student appears multiple times
+- Prints total marks using Python dictionary
+- Beginner-friendly project — only built-in libraries used
 
 ---
 
-## 📁 Example Input: `marks.csv`
+## 📁 Sample CSV Input
 
 Name,Marks  
 Alice,50  
@@ -32,53 +32,47 @@ Charlie,60
 
 ## ▶️ How to Run
 
-1. ✅ Make sure you have Python installed (3.x version is fine)
+### 1. Create a CSV file named `marks.csv` in the same folder:
 
-2. ✅ Save this as `script.py`:
+Name,Marks
+Alice,50
+Bob,40
+Alice,30
+Bob,45
+Charlie,60
 
-```python
+kotlin
+Copy
+Edit
+
+### 2. Copy and save this Python code as `script.py`:
+
 import csv
 
 totalmarks = {}
 
 with open("marks.csv", "r") as f:
-    reader = csv.reader(f)
-    next(reader)  # skip header
+reader = csv.reader(f)
+next(reader) # skip header
 
-    for row in reader:
-        name = row[0]
-        marks = int(row[1])
-        totalmarks[name] = totalmarks.get(name, 0) + marks
-
+sql
+Copy
+Edit
+for row in reader:
+    name = row[0]
+    marks = int(row[1])
+    totalmarks[name] = totalmarks.get(name, 0) + marks
 print(totalmarks)
-✅ Put your marks.csv file in the same folder as script.py.
-
-✅ Run the script:
 
 bash
 Copy
 Edit
+
+### 3. Run the script:
+
+Open terminal or command prompt and type:
+
 python script.py
-💡 Use Cases
-📚 School or college student data processing
-
-📈 Simple data aggregation from spreadsheets
-
-💻 Beginner Python project for practice
-
-🧠 What You Learn
-Reading CSV files in Python
-
-Using dictionaries to accumulate values
-
-File handling and row iteration
-
-🙌 Author
-Devansh2604
-🔗 GitHub Profile
-
-⭐ Show Some Love
-If you liked this project, give it a ⭐ star on GitHub!
 
 yaml
 Copy
@@ -86,5 +80,22 @@ Edit
 
 ---
 
+## 🧠 What You Learn
 
-Cha
+- Reading CSV files with `csv.reader`
+- Using dictionaries to sum data
+- Basic file handling in Python
+
+---
+
+## 🙌 Author
+
+**Devansh2604**  
+[Visit my GitHub →](https://github.com/devansh2604)
+
+---
+
+## ⭐ Like this?
+
+If you liked this mini project, please give it a ⭐ star on GitHub to support!
+
